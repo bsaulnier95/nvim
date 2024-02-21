@@ -1,2 +1,1 @@
-require("ben_config")
-print("hi")
+require("prefs")
