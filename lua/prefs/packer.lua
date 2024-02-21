@@ -28,4 +28,11 @@ return require('packer').startup(function(use)
   use { 'nvim-treesitter/playground' }
  
   use { 'tpope/vim-fugitive' }
+  use({
+    "kdheepak/lazygit.nvim",
+    -- optional for floating window border decoration
+    requires = {
+        "nvim-lua/plenary.nvim",
+    },
+  })
 end)
