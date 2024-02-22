@@ -7,12 +7,14 @@ return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
+  -- Telescope
   use {
 	  'nvim-telescope/telescope.nvim', tag = '0.1.5',
 	  -- or                            , branch = '0.1.x',
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
+  -- Color Scheme
   use({
 	  'folke/tokyonight.nvim',
 	  as = tokoyonight,
@@ -21,12 +23,14 @@ return require('packer').startup(function(use)
 	  end
   })
 
+  -- Tree sitter
   use {
 	'nvim-treesitter/nvim-treesitter',
         run = ':TSUpdate'
   }
   use { 'nvim-treesitter/playground' }
- 
+
+  -- Git
   use { 'tpope/vim-fugitive' }
   use({
     "kdheepak/lazygit.nvim",
@@ -35,4 +39,6 @@ return require('packer').startup(function(use)
         "nvim-lua/plenary.nvim",
     },
   })
+  -- Undotree
+  use { 'mbbill/undotree' } 
 end)
