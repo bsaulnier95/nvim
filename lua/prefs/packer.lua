@@ -21,7 +21,7 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
-  -- Color Scheme
+  -- Color Schemes
   use({
 	  'folke/tokyonight.nvim',
 	  as = tokoyonight,
@@ -29,6 +29,15 @@ return require('packer').startup(function(use)
 		  vim.cmd('colorscheme tokyonight')
 	  end
   })
+ 
+  use({
+	  'EdenEast/nightfox.nvim',
+	  as = nightfox,
+	  config = function()
+		  vim.cmd('colorscheme nightfox')
+	  end
+  })
+
 
   -- Tree sitter
   use {

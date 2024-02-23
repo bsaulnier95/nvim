@@ -1,5 +1,5 @@
 function ColorScheme(color)
-	color = color or "tokyonight"
+	color = color or "duskfox"
 	vim.cmd.colorscheme(color)
 end
 
