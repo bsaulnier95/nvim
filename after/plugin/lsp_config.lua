@@ -26,9 +26,10 @@ require("lspconfig").volar.setup { on_attach = on_attach }
 require("lspconfig").solargraph.setup {
   on_attach = on_attach,
   capabilities = capabilities,
+  filetypes = { "ruby" },
   settings = {
     solargraph = {
-      diagnostics = false
+      diagnostics = true
     }
   }
 }

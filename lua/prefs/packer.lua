@@ -40,6 +40,8 @@ return require('packer').startup(function(use)
 	  end
   }
 
+  use { "catppuccin/nvim", as = "catppuccin" }
+
   -- Tree sitter
   use {
 	'nvim-treesitter/nvim-treesitter',
@@ -61,4 +63,22 @@ return require('packer').startup(function(use)
 
   -- Undotree
   use { 'mbbill/undotree' }
+
+  -- Lua Line
+  use {
+   'nvim-lualine/lualine.nvim',
+   requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+  }
+
+  -- Float Term
+--  use { 'voldikss/vim-floaterm' }
+
+  -- File Tree
+--  use {
+--  'nvim-tree/nvim-tree.lua',
+--    requires = {
+--      'nvim-tree/nvim-web-devicons', -- optional
+--    },
+--  }
+
 end)
