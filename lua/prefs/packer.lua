@@ -7,12 +7,28 @@ return require('packer').startup(function(use)
   -- Packer can manage itself
   use { 'wbthomason/packer.nvim' }
 
-  --LSP
+  -- LSP
   use {
     'williamboman/mason.nvim',
     'williamboman/mason-lspconfig.nvim',
     'neovim/nvim-lspconfig'
   }
+
+  -- nvim-cmp start
+  -- Completion engine
+  use { 'hrsh7th/nvim-cmp' }
+
+  -- Snippet engine and its nvim-cmp source
+  use { 'hrsh7th/cmp-nvim-lsp' }
+  use { 'hrsh7th/cmp-buffer' }
+  use { 'hrsh7th/cmp-path' }
+  use { 'hrsh7th/cmp-cmdline' }
+  use { 'hrsh7th/vim-vsnip' }
+  use { 'hrsh7th/cmp-vsnip' }
+
+  -- LSP completion source for nvim-cmp
+  use { 'hrsh7th/cmp-nvim-lsp' }
+  -- nvim-cmp end
 
   -- Telescope
   use {
