@@ -19,7 +19,6 @@ return require('packer').startup(function(use)
   use { 'hrsh7th/nvim-cmp' }
 
   -- Snippet engine and its nvim-cmp source
-  use { 'hrsh7th/cmp-nvim-lsp' }
   use { 'hrsh7th/cmp-buffer' }
   use { 'hrsh7th/cmp-path' }
   use { 'hrsh7th/cmp-cmdline' }
@@ -92,15 +91,18 @@ return require('packer').startup(function(use)
   use { 'lewis6991/gitsigns.nvim' } -- OPTIONAL: for git status
   use { 'romgrk/barbar.nvim' }
 
+  --Indent Blankline
+  use { 'lukas-reineke/indent-blankline.nvim' }
+
   -- Float Term
---  use { 'voldikss/vim-floaterm' }
+  --  use { 'voldikss/vim-floaterm' }
 
   -- File Tree
---  use {
---  'nvim-tree/nvim-tree.lua',
---    requires = {
---      'nvim-tree/nvim-web-devicons', -- optional
---    },
---  }
+  --  use {
+  --  'nvim-tree/nvim-tree.lua',
+  --    requires = {
+  --      'nvim-tree/nvim-web-devicons', -- optional
+  --    },
+  --  }
 
 end)
