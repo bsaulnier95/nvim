@@ -69,7 +69,7 @@ return require('packer').startup(function(use)
   -- Git
   use { 'tpope/vim-fugitive' }
 
-  use{
+  use {
     "kdheepak/lazygit.nvim",
     -- optional for floating window border decoration
     requires = {
@@ -85,6 +85,12 @@ return require('packer').startup(function(use)
    'nvim-lualine/lualine.nvim',
    requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
+
+  -- Barbar
+  -- These optional plugins should be loaded directly because of a bug in Packer lazy loading
+  use { 'nvim-tree/nvim-web-devicons' } -- OPTIONAL: for file icons
+  use { 'lewis6991/gitsigns.nvim' } -- OPTIONAL: for git status
+  use { 'romgrk/barbar.nvim' }
 
   -- Float Term
 --  use { 'voldikss/vim-floaterm' }

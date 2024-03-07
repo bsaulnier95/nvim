@@ -4,7 +4,7 @@ vim.keymap.set("n", "<leader>q", vim.cmd.q)
 vim.keymap.set("n", "<leader>noh", vim.cmd.noh)
 vim.keymap.set("n", "<leader>n", vim.cmd.bnext)
 vim.keymap.set("n", "<leader>b", vim.cmd.bprevious)
-vim.keymap.set("n", "<leader>bd", vim.cmd.bdelete)
+vim.keymap.set("n", "<leader>bd", vim.cmd.bd)
 
 -- Move highlighted section
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
